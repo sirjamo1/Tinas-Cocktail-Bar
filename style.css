@@ -1,0 +1,126 @@
+
+
+h1 {
+    font-size: 3em;
+    
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+img {
+    border-radius: 30%;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+.carousel {
+    height: 100%;
+    background: no-repeat;
+    background-size: cover;
+    background-image: url("./images/backgroundTwo.jpg");
+}
+
+.carousel.carousel-slider .carousel-item {
+    width: 80%;
+}
+.carousel-h2 {
+    color: blue;
+    text-shadow: 2px 2px 2px rgba(246, 241, 241, 0.6);
+    font-size: 2.3em !important;
+}
+section {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+ul {
+}
+li {
+    list-style-image: url("./images/ukuleleIcon2.png");
+    list-style-position: inside;
+    text-shadow: 1px 1px 2px rgba(246, 241, 241, 0.6);
+    font-size: 1.5em;
+}
+.splash-page {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url("./images/backgroundOne.jpg");
+    z-index: 99;
+}
+.splash-page h1,
+.splash-page h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Vibur", sans-serif;
+    animation: flicker 1.5s infinite alternate;
+    width: 200px;
+}
+.splash-page h2 {
+    animation: flickerRed 0.5s infinite alternate;
+}
+.splash-page button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.neonText {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+        0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+            0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
+.neonRedText {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+        0 0 42px rgb(255, 47, 0), 0 0 82px rgb(255, 47, 0),
+        0 0 92px rgb(255, 47, 0), 0 0 102px rgb(255, 47, 0),
+        0 0 151px rgb(255, 47, 0);
+}
+
+@keyframes flickerRed {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+            0 0 40px rgb(255, 47, 0), 0 0 80px rgb(255, 47, 0),
+            0 0 90px rgb(255, 47, 0), 0 0 100px rgb(255, 47, 0),
+            0 0 150px rgb(255, 47, 0);
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
