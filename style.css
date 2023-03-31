@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Yrsa:wght@300;400;500;700&display=swap");
 
 h1 {
-    font-size: 3em;
-    
-    
+    font-size: 4em;
 }
 body {
     height: 100vh;
     width: 100vw;
-    font-family: 'Yrsa', serif;
+    font-family: "Yrsa", serif;
 }
 
 img {
@@ -37,8 +35,6 @@ section {
     align-items: center;
     justify-content: center;
 }
-ul {
-}
 li {
     list-style-image: url("./images/ukuleleIcon2.png");
     list-style-position: inside;
@@ -64,24 +60,68 @@ li {
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: "Vibur", sans-serif;
-    animation: flicker 1.5s infinite alternate;
+    font-family: "Tilt Neon", cursive;
+    
     width: 200px;
 }
-.splash-page h2 {
-    animation: flickerRed 0.5s infinite alternate;
+.splash-page h1 {
+animation: flicker 1.5s infinite alternate;
 }
+
 .splash-page button {
     background: none;
     border: none;
     cursor: pointer;
 }
-.neonText {
+.splash-r {
+    display: inline-block;
+}
+.neon-text {
     color: #fff;
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
         0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
+.neon-red-text {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ff2f00,
+        0 0 82px #ff2f00, 0 0 92px #ff2f00, 0 0 102px #ff2f00, 0 0 151px #ff2f00;
+        animation: flickerRed 1.5s infinite alternate;
+}
 
+@keyframes blackout {
+    0% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+            0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    }
+    10% {
+        text-shadow: none;
+    }
+    20% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+            0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    }
+    30% {
+        text-shadow: none;
+    }
+    60% {
+        text-shadow: 0 0 8px #fff, 0 0 22px #fff, 0 0 30px #fff, 0 0 40px #0fa,
+            0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    }
+    70% {
+        color: #fff;
+        text-shadow: 0 0 4px #0fa, 0 0 8px #0fa, 0 0 12px #0fa, 0 0 16px #0fa,
+            0 0 20px #0fa, 0 0 24px #0fa, 0 0 28px #0fa, 0 0 32px #0fa;
+
+        transform: rotate(0deg);
+        transform-origin: bottom left;
+    }
+    100% {
+        text-shadow: 1.5px 1px 1px rgba(0, 0, 0, 0.6);
+        color: rgba(0, 0, 0, 0.438);
+        transform: rotate(60deg);
+        transform-origin: bottom left;
+    }
+}
 @keyframes flicker {
     0%,
     18%,
@@ -99,15 +139,21 @@ li {
         text-shadow: none;
     }
 }
-.neonRedText {
-    color: #fff;
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
-        0 0 42px rgb(255, 47, 0), 0 0 82px rgb(255, 47, 0),
-        0 0 92px rgb(255, 47, 0), 0 0 102px rgb(255, 47, 0),
-        0 0 151px rgb(255, 47, 0);
-}
 
 @keyframes flickerRed {
+    0%,
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+            0 0 40px #ff2f00, 0 0 80px #ff2f00, 0 0 90px #ff2f00,
+            0 0 100px #ff2f00, 0 0 150px #ff2f00;
+    }
+    50% {
+        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #fff,
+            0 0 40px #701802, 0 0 80px #701802, 0 0 90px #701802,
+            0 0 100px #701802, 0 0 150px #701802;
+    }
+}
+/*👉@keyframes flickerRed {
     0%,
     18%,
     22%,
@@ -116,13 +162,13 @@ li {
     57%,
     100% {
         text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
-            0 0 40px rgb(255, 47, 0), 0 0 80px rgb(255, 47, 0),
-            0 0 90px rgb(255, 47, 0), 0 0 100px rgb(255, 47, 0),
-            0 0 150px rgb(255, 47, 0);
+            0 0 40px #ff2f00, 0 0 80px #ff2f00,
+            0 0 90px #ff2f00, 0 0 100px #ff2f00,
+            0 0 150px #ff2f00;
     }
     20%,
     24%,
     55% {
         text-shadow: none;
     }
-}
+}👈*/
