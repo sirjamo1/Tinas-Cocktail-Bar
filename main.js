@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const splashPage = document.querySelector(".splash-page");
 const carousel = document.querySelector(".carousel");
 const splashR = document.querySelector(".splash-r");
-const neonSound = new Audio("Sounds/neon.wav");
+const neonSound = new Audio("sounds/neon.wav");
 
 const splashButton = document.getElementsByTagName("button");
 const neonRedText = document.querySelector(".neon-red-text");
