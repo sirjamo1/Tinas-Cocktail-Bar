@@ -38,7 +38,7 @@ section {
 li {
     list-style-image: url("./images/ukuleleIcon2.png");
     list-style-position: inside;
-    text-shadow: 1px 1px 2px rgba(246, 241, 241, 0.6);
+    text-shadow: 1px 1px 2px rgb(246, 241, 241);
     font-size: 1.5em;
 }
 .splash-page {
@@ -61,12 +61,12 @@ li {
     text-transform: uppercase;
     font-weight: 400;
     font-family: "Tilt Neon", cursive;
-    
+
     width: 200px;
 }
 .splash-page h1 {
-animation: flicker 2.5s infinite alternate;
-margin-bottom: 150px;
+    animation: flicker 2.5s infinite alternate;
+    margin-bottom: 150px;
 }
 
 .splash-page button {
@@ -79,14 +79,14 @@ margin-bottom: 150px;
 }
 .neon-text {
     color: #fff;
-        text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 7px #fff, 0 0 7px #0fa,
-0 0 15px #0fa, 0 0 18px #0fa, 0 0 20px #0fa, 0 0 30px #0fa;
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 7px #fff, 0 0 7px #0fa,
+        0 0 15px #0fa, 0 0 18px #0fa, 0 0 20px #0fa, 0 0 30px #0fa;
 }
 .neon-red-text {
     color: #fff;
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ff2f00,
         0 0 82px #ff2f00, 0 0 92px #ff2f00, 0 0 102px #ff2f00, 0 0 151px #ff2f00;
-        animation: flickerRed 1.5s infinite alternate;
+    animation: flickerRed 1.5s infinite alternate;
 }
 
 @keyframes blackout {
@@ -131,14 +131,14 @@ margin-bottom: 150px;
     53%,
     57%,
     100% {
-                    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 7px #fff, 0 0 7px #0fa,
-0 0 15px #0fa, 0 0 18px #0fa, 0 0 20px #0fa, 0 0 30px #0fa;
+        text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 7px #fff, 0 0 7px #0fa,
+            0 0 15px #0fa, 0 0 18px #0fa, 0 0 20px #0fa, 0 0 30px #0fa;
     }
     20%,
     24%,
     55% {
-       text-shadow: 0 0 0px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #0fa,
-0 0 7px #0fa, 0 0 9px #0fa, 0 0 10px #0fa, 0 0 15px #0fa;
+        text-shadow: 0 0 0px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #0fa,
+            0 0 7px #0fa, 0 0 9px #0fa, 0 0 10px #0fa, 0 0 15px #0fa;
     }
 }
 
@@ -150,9 +150,8 @@ margin-bottom: 150px;
             0 0 100px #ff2f00, 0 0 150px #ff2f00;
     }
     50% {
-        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #fff,
-            0 0 40px #701802, 0 0 80px #701802, 0 0 90px #701802,
-            0 0 100px #701802, 0 0 150px #701802;
+        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #fff, 0 0 40px #701802,
+            0 0 80px #701802, 0 0 90px #701802, 0 0 100px #701802,
+            0 0 150px #701802;
     }
 }
-
