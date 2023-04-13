@@ -1,13 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     var elems = document.querySelectorAll(".carousel");
     var instances = M.Carousel.init(elems, {});
+});
+document.addEventListener("DOMContentLoaded", () => {
+    var elems = document.querySelectorAll(".modal");
+    var instances = M.Modal.init(elems, {});
 });
 
 const splashPage = document.querySelector(".splash-page");
 const carousel = document.querySelector(".carousel");
 const splashR = document.querySelector(".splash-r");
 const neonSound = new Audio("sounds/neon.wav");
-
 const splashButton = document.getElementsByTagName("button");
 const neonRedText = document.querySelector(".neon-red-text");
 
