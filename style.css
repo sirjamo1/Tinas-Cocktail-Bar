@@ -41,10 +41,29 @@ li {
     text-shadow: 1px 1px 2px rgb(246, 241, 241);
     font-size: 1.5em;
 }
+.modal-links-container {
+    display: flex;
+ justify-content: space-evenly;
+ margin-top: 20px;
+ margin-bottom: 10px;
+}
+.modal-links-container .material-icons {
+    font-size: 2.2em;
+}
 .modal li {
     font-size: 1em;
     list-style-image: none;
     text-align: left;
+}
+.modal ul li {
+list-style-type: disc;
+}
+.modal ol {
+    padding-inline-start: 0;
+}
+.modal-footer a {
+    color: red;
+    font-size: 2em;
 }
 .material-icons {
     color: navy;
